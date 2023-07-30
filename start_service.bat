@@ -1,0 +1,1 @@
+docker run -p 8080:9090 --network=test-net -e SPRING_DATASOURCE_URL="jdbc:postgresql://postgres-example:5432/postgres?currentSchema=users_scheme" -e DB_USER_NAME="postgres" -e DB_PASSWORD="admin"  my-app

@@ -1,0 +1,2 @@
+ docker pull postgres:13
+ docker run -d --name postgres-example --network=test-net -e POSTGRES_PASSWORD=admin -e PGDATA=/var/lib/postgresql/data/pgdata -v C:/tmp/pgdata:/var/lib/postgresql/data -v C:\Users\user\Desktop\skillbox\init_scripts:/docker-entrypoint-initdb.d -p 5432:5432 postgres:13
